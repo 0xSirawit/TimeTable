@@ -9,7 +9,7 @@ from discord.colour import Color
 from discord.embeds import Embed
 from keep_alive import keep_alive
 client = discord.Client()
-TOKEN="ODc5MTkyMDg0MDAxNzQ3MDI2.YSMJbw.AhDStghL_EIGJKaHuA0i1l7n340" #bot's token
+TOKEN="" #bot's token
 
 #set time & order of timetable
 tz_thai = pytz.timezone("Asia/Bangkok")
