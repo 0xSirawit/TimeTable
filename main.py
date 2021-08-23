@@ -7,7 +7,6 @@ from discord import message
 from discord import embeds
 from discord.colour import Color
 from discord.embeds import Embed
-from keep_alive import keep_alive
 client = discord.Client()
 TOKEN="" #bot's token
 
@@ -250,5 +249,4 @@ async def on_message(message):
     if msg == '.kuy':
         await message.channel.send(embed=kuy_embed)
 
-keep_alive()
 client.run(TOKEN)
