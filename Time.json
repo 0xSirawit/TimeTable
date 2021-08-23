@@ -1,0 +1,268 @@
+{
+    "Monday": 
+    [
+        {
+            "subject": "Homeroom",
+            "time": "08:00-08:30",
+            "link": "https://meet.google.com/lookup/esbru5hoq4"
+        },
+        {
+            "subject": "Chemistry",
+            "time": "08:30-09:20",
+            "link": "https://meet.google.com/lookup/bgp4wudfrc"
+        },
+        {
+            "subject": "Chemistry",
+            "time": "09:20-10:10",
+            "link": "https://meet.google.com/lookup/bgp4wudfrc"
+        },
+        {
+            "subject": "Chemistry",
+            "time": "10:10-11:00",
+            "link": "https://meet.google.com/lookup/bgp4wudfrc"
+        },
+        {
+            "subject": "Lunch break",
+            "time": "11:00-11:50",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Citizenship",
+            "time": "11:50-12:40",
+            "link": "https://meet.google.com/lookup/bh4qsl5izr"
+        },
+        {
+            "subject": "Thai_language",
+            "time": "12:40-13:30",
+            "link": "https://meet.google.com/lookup/gg6fprhcmh"
+        },
+        {
+            "subject": "Thai_language",
+            "time": "13:30-14:20",
+            "link": "https://meet.google.com/lookup/gg6fprhcmh"
+        },
+        {
+            "subject": "Math2",
+            "time": "14:20-15:10",
+            "link": "https://meet.google.com/lookup/bqnhxrul45"
+        },
+        {
+            "subject": "Math2",
+            "time": "15:10-16:00",
+            "link": "https://meet.google.com/lookup/bqnhxrul45"
+        }
+    ],
+    "Tuesday":
+    [
+        {
+            "subject": "Homeroom",
+            "time": "08:00-08:30",
+            "link": "https://meet.google.com/lookup/esbru5hoq4"
+        },
+        {
+            "subject": "Computer_Science",
+            "time": "08:30-09:20",
+            "link": "https://meet.google.com/lookup/au6j3i36rz"
+        },
+        {
+            "subject": "Health & Hygeine",
+            "time": "09:20-10:10",
+            "link": "https://meet.google.com/lookup/gonlvhhj4i"
+        },
+        {
+            "subject": "Art",
+            "time": "10:10-11:00",
+            "link": "https://meet.google.com/lookup/fnugcqiw2x"
+        },
+        {
+            "subject": "Lunch break",
+            "time": "11:00-11:50",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Soldier",
+            "time": "11:50-12:40",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Soldier",
+            "time": "12:40-13:30",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Soldier",
+            "time": "13:30-14:20",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Soldier",
+            "time": "14:20-15:10",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Soldier",
+            "time": "15:10-16:00",
+            "link": "No_Meeting"
+        }
+
+    ],
+    "Wednesday":
+    [
+        {
+            "subject": "Homeroom",
+            "time": "08:00-08:30",
+            "link": "https://meet.google.com/lookup/esbru5hoq4"
+        },
+        {
+            "subject": "Social_Studies",
+            "time": "08:30-09:20",
+            "link": "https://meet.google.com/lookup/h5ygpz7ow2"
+        },
+        {
+            "subject": "Social_Studies",
+            "time": "09:20-10:10",
+            "link": "https://meet.google.com/lookup/h5ygpz7ow2"
+        },
+        {
+            "subject": "English_by_Stephan",
+            "time": "10:10-11:00",
+            "link": "https://meet.google.com/lookup/gnhhreanxy"
+        },
+        {
+            "subject": "English_by_Stephan",
+            "time": "11:00-11:50",
+            "link": "https://meet.google.com/lookup/gnhhreanxy"
+        },
+        {
+            "subject": "Lunch break",
+            "time": "11:50-12:40",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Home_Economics",
+            "time": "12:40-13:30",
+            "link": "https://meet.google.com/lookup/chzbc3mre4"
+        },
+        {
+            "subject": "Physical_Education",
+            "time": "13:30-14:20",
+            "link": "Idk"
+        },
+        {
+            "subject": "Physics",
+            "time": "14:20-15:10",
+            "link": "https://meet.google.com/lookup/fehmd7itfm"
+        },
+        {
+            "subject": "Physics",
+            "time": "15:10-16:00",
+            "link": "https://meet.google.com/lookup/fehmd7itfm"
+        }
+    ],
+    "Thursday":
+    [
+        {
+            "subject": "Homeroom",
+            "time": "08:00-08:30",
+            "link": "https://meet.google.com/lookup/esbru5hoq4"
+        },
+        {
+            "subject": "Japanese & Chinese",
+            "time": "08:30-09:20",
+            "link": "Idk"
+        },
+        {
+            "subject": "Japanese & Chinese",
+            "time": "09:20-10:10",
+            "link": "Idk"
+        },
+        {
+            "subject": "Free_Time",
+            "time": "10:10-11:00",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Guidance",
+            "time": "11:00-11:50",
+            "link": "https://meet.google.com/lookup/a3fs5edl2x"
+        },
+        {
+            "subject": "Lunch break",
+            "time": "11:50-12:40",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Math2",
+            "time": "12:40-13:30",
+            "link": "https://meet.google.com/lookup/bqnhxrul45"
+        },
+        {
+            "subject": "Math2",
+            "time": "13:30-14:20",
+            "link": "https://meet.google.com/lookup/bqnhxrul45"
+        },
+        {
+            "subject": "English_by_Stephan",
+            "time": "14:20-15:10",
+            "link": "https://meet.google.com/lookup/gnhhreanxy"
+        },
+        {
+            "subject": "English_by_Stephan",
+            "time": "15:10-16:00",
+            "link": "https://meet.google.com/lookup/gnhhreanxy"
+        }
+    ],
+    "Friday":
+    [
+        {
+            "subject": "Homeroom",
+            "time": "08:00-08:30",
+            "link": "https://meet.google.com/lookup/esbru5hoq4"
+        },
+        {
+            "subject": "Biology",
+            "time": "08:30-09:20",
+            "link": "Idk"
+        },
+        {
+            "subject": "Biology",
+            "time": "09:20-10:10",
+            "link": "Idk"
+        },
+        {
+            "subject": "Physics",
+            "time": "10:10-11:00",
+            "link": "https://meet.google.com/lookup/fehmd7itfm"
+        },
+        {
+            "subject": "Physics",
+            "time": "11:00-11:50",
+            "link": "https://meet.google.com/lookup/fehmd7itfm"
+        },
+        {
+            "subject": "Lunch break",
+            "time": "11:50-12:40",
+            "link": "No_Meeting"
+        },
+        {
+            "subject": "Math1",
+            "time": "12:40-13:30",
+            "link": "https://meet.google.com/lookup/df6f3oodox"
+        },
+        {
+            "subject": "Math1",
+            "time": "13:30-14:20",
+            "link": "https://meet.google.com/lookup/df6f3oodox"
+        },
+        {
+            "subject": "English_by_Patra",
+            "time": "14:20-15:10",
+            "link": "https://meet.google.com/lookup/h2k5sisf4i"
+        },
+        {
+            "subject": "English_by_Patra",
+            "time": "15:10-16:00",
+            "link": "https://meet.google.com/lookup/h2k5sisf4i"
+        }
+    ]
+}
