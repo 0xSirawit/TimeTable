@@ -1,10 +1,7 @@
 # TimeTable
-TimeTable Discord Bot 
+**TimeTable Discord Bot**
 ⚙️ .h | help
-Module requiement
--discord
+**Module requiement-discord**
 -json
 -datetime
 -pytz
--flask
--Thread
