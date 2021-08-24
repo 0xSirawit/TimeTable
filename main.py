@@ -10,55 +10,6 @@ from discord.embeds import Embed
 client = discord.Client()
 TOKEN="" #bot's token
 
-#set time & order of timetable
-tz_thai = pytz.timezone("Asia/Bangkok")
-now = datetime.now(tz_thai)
-today = now.strftime("%A")
-
-def order():
-    order = 9
-    if now.hour <= 8 and now.minute - 30 <= 0:order=0
-    if now.hour == 8 and now.minute - 30 >= 0:order=1
-    if now.hour == 9 and now.minute - 20 <  0:order=1
-    if now.hour == 9 and now.minute - 20 >= 0:order=2
-    if now.hour == 10 and now.minute - 10 < 0:order=2
-    if now.hour == 10 and now.minute - 10 >=0:order=3
-    if now.hour == 10 and now.minute - 0 <= 59:order=4
-    if now.hour == 11 and now.minute - 50 < 0:order=4
-    if now.hour == 11 and now.minute - 50 >=0:order=5
-    if now.hour == 12 and now.minute - 40 < 0:order=5
-    if now.hour == 12 and now.minute - 40 >=0:order=6
-    if now.hour == 13 and now.minute - 30 < 0:order=6
-    if now.hour == 13 and now.minute - 30 >=0:order=7
-    if now.hour == 14 and now.minute - 20 < 0:order=7
-    if now.hour == 14 and now.minute - 20 >=0:order=8
-    if now.hour == 15 and now.minute - 10 < 0:order=8
-    if now.hour == 15 and now.minute - 10 >=0:order=9
-    return order
-
-#read json file 
-myjsonfile=open('Time.json','r')
-jsondata=myjsonfile.read()
-obj=json.loads(jsondata)
-daylist=obj[today]
-daymonlist=obj["Monday"]
-daytuelist=obj["Tuesday"]
-daywedlist=obj["Wednesday"]
-daythulist=obj["Thursday"]
-dayfrilist=obj["Friday"]
-
-#weekday colors
-Cmonday = 0xFFFF00
-Ctuesday = 0xFFC0CB
-Cwednesday = 0x00FF00
-Cthursday = 0xFFA500
-Cfriday = 0xADD8E6
-if today == "Monday":color_today=Cmonday
-if today == "Tuesday":color_today=Ctuesday
-if today == "Wednesday":color_today=Cwednesday
-if today == "Thursday":color_today=Cthursday
-if today == "Friday":color_today=Cfriday
-
 #main
 @client.event
 async def on_ready():
@@ -70,6 +21,7 @@ async def on_message(message):
     tz_thai = pytz.timezone("Asia/Bangkok")
     now = datetime.now(tz_thai)
     today = now.strftime("%A")
+
     #read json file 
     myjsonfile=open('Time.json','r')
     jsondata=myjsonfile.read()
@@ -80,6 +32,7 @@ async def on_message(message):
     daywedlist=obj["Wednesday"]
     daythulist=obj["Thursday"]
     dayfrilist=obj["Friday"]
+
     #weekday colors
     Cmonday = 0xFFFF00
     Ctuesday = 0xFFC0CB
@@ -92,10 +45,33 @@ async def on_message(message):
     if today == "Thursday":color_today=Cthursday
     if today == "Friday":color_today=Cfriday
 
+    #orderfunction
+    def order():
+      order = 9
+      if now.hour <= 8 and now.minute - 30 <= 0:order=0
+      if now.hour == 8 and now.minute - 30 >= 0:order=1
+      if now.hour == 9 and now.minute - 20 <  0:order=1
+      if now.hour == 9 and now.minute - 20 >= 0:order=2
+      if now.hour == 10 and now.minute - 10 < 0:order=2
+      if now.hour == 10 and now.minute - 10 >=0:order=3
+      if now.hour == 10 and now.minute - 0 <= 59:order=4
+      if now.hour == 11 and now.minute - 50 < 0:order=4
+      if now.hour == 11 and now.minute - 50 >=0:order=5
+      if now.hour == 12 and now.minute - 40 < 0:order=5
+      if now.hour == 12 and now.minute - 40 >=0:order=6
+      if now.hour == 13 and now.minute - 30 < 0:order=6
+      if now.hour == 13 and now.minute - 30 >=0:order=7
+      if now.hour == 14 and now.minute - 20 < 0:order=7
+      if now.hour == 14 and now.minute - 20 >=0:order=8
+      if now.hour == 15 and now.minute - 10 < 0:order=8
+      if now.hour == 15 and now.minute - 10 >=0:order=9
+      return order
+
+    #embed_discord
     now_table_embed = discord.Embed(
         title= "Subject["+str(order())+"] : "+daylist[order()].get("subject"),
         description="Date & Time : "+now.strftime("%c"),
-        color= discord.Colour.teal()
+        color= color_today
     )
     now_table_embed.add_field(name='Time',value=(daylist[order()].get("time")),inline=False)
     now_table_embed.add_field(name='Link',value=(daylist[order()].get("link")),inline=False)
@@ -239,14 +215,7 @@ async def on_message(message):
     help_embed.add_field(name='Table of Thursday',value=".thu",inline=False)
     help_embed.add_field(name='Table of Friday',value=".fri",inline=False)
 
-    #kuy
-    kuy_embed = discord.Embed(
-        title= "Kuy rai!!!!",
-        description="Date & Time : "+now.strftime("%c"),
-        color= 0xFF0000
-    )
-    kuy_embed.set_image(url='https://c.tenor.com/ojGSDL9QIQAAAAAC/mr-bean-fuck-you.gif')
-
+    #commands
     msg = message.content
     if msg == '.now':
         await message.channel.send(embed=now_table_embed)
@@ -264,7 +233,5 @@ async def on_message(message):
         await message.channel.send(embed=fri_table_embed)
     if msg == '.h':
         await message.channel.send(embed=help_embed)
-    if msg == '.kuy':
-        await message.channel.send(embed=kuy_embed)
-        
+
 client.run(TOKEN)
