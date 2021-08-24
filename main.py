@@ -7,6 +7,7 @@ from discord import message
 from discord import embeds
 from discord.colour import Color
 from discord.embeds import Embed
+from keep_alive import keep_alive
 client = discord.Client()
 TOKEN="" #bot's token
 
@@ -251,5 +252,6 @@ async def on_message(message):
         await message.channel.send(embed=fri_table_embed)
     if msg == '.helpt':
         await message.channel.send(embed=help_embed)
-        
+
+keep_alive()
 client.run(TOKEN)
