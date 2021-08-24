@@ -13,7 +13,9 @@ TOKEN="" #bot's token
 #main
 @client.event
 async def on_ready():
+    await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="⚙️.helpt"))
     print('logged in as {0.user}'.format(client))
+
 
 @client.event
 async def on_message(message):
@@ -67,6 +69,7 @@ async def on_message(message):
       return order
 
     #embed_discord
+    #now
     now_table_embed = discord.Embed(
         title= "Subject["+str(order())+"] : "+daylist[order()].get("subject"),
         description="Date & Time : "+now.strftime("%c"),
@@ -75,6 +78,18 @@ async def on_message(message):
     now_table_embed.add_field(name='Time',value=(daylist[order()].get("time")),inline=False)
     now_table_embed.add_field(name='Link',value=(daylist[order()].get("link")),inline=False)
 
+    #next subject
+    nextsubject = order()+1
+    if order() == 9:nextsubject = order()
+    next_table_embed = discord.Embed(
+        title= "Subject["+str(nextsubject)+"] : "+daylist[nextsubject].get("subject"),
+        description="Date & Time : "+now.strftime("%c"),
+        color= color_today
+    )
+    next_table_embed.add_field(name='Time',value=(daylist[nextsubject].get("time")),inline=False)
+    next_table_embed.add_field(name='Link',value=(daylist[nextsubject].get("link")),inline=False)
+
+    #today
     today_table_embed = discord.Embed(
         title= "TimeTable of "+today,
         description="Date & Time : "+now.strftime("%c"),
@@ -202,30 +217,26 @@ async def on_message(message):
     
     #help
     help_embed = discord.Embed(
-        title= "HELP",
+        title= "📃 Commands",
         description="Date & Time : "+now.strftime("%c"),
         color= discord.Colour.teal()
     )
-    help_embed.add_field(name='Study now',value=".now",inline=False)
-    help_embed.add_field(name='Table of Today',value=".today",inline=False)
-    help_embed.add_field(name='Table of Monday',value=".mon",inline=False)
-    help_embed.add_field(name='Table of Tuesday',value=".tue",inline=False)
-    help_embed.add_field(name='Table of Wednesday',value=".wed",inline=False)
-    help_embed.add_field(name='Table of Thursday',value=".thu",inline=False)
-    help_embed.add_field(name='Table of Friday',value=".fri",inline=False)
-
-    #kuy
-    kuy_embed = discord.Embed(
-        title= "Kuy rai!!!!",
-        description="Date & Time : "+now.strftime("%c"),
-        color= 0xFF0000
-    )
-    kuy_embed.set_image(url='https://c.tenor.com/ojGSDL9QIQAAAAAC/mr-bean-fuck-you.gif')
+    help_embed.add_field(name='Study now',value=".now",inline=True)
+    help_embed.add_field(name='Next Subject',value=".next",inline=True)
+    help_embed.add_field(name='Table of Weekday',value="---------------------------------------------",inline=False)
+    help_embed.add_field(name='Today',value=".today",inline=True)
+    help_embed.add_field(name='Monday',value=".mon",inline=True)
+    help_embed.add_field(name='Tuesday',value=".tue",inline=True)
+    help_embed.add_field(name='Wednesday',value=".wed",inline=True)
+    help_embed.add_field(name='Thursday',value=".thu",inline=True)
+    help_embed.add_field(name='Friday',value=".fri",inline=True)
 
     #commands
     msg = message.content
     if msg == '.now':
         await message.channel.send(embed=now_table_embed)
+    if msg == '.next':
+        await message.channel.send(embed=next_table_embed)
     if msg == '.today':
         await message.channel.send(embed=today_table_embed)
     if msg == '.mon':
@@ -238,9 +249,7 @@ async def on_message(message):
         await message.channel.send(embed=thu_table_embed)
     if msg == '.fri':
         await message.channel.send(embed=fri_table_embed)
-    if msg == '.h':
+    if msg == '.helpt':
         await message.channel.send(embed=help_embed)
-    if msg == '.kuy':
-        await message.channel.send(embed=kuy_embed)
-
+        
 client.run(TOKEN)
