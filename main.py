@@ -16,10 +16,6 @@ now = datetime.now(tz_thai)
 today = now.strftime("%A")
 
 def order():
-    #set time & order of timetable
-    tz_thai = pytz.timezone("Asia/Bangkok")
-    now = datetime.now(tz_thai)
-    today = now.strftime("%A")
     order = 9
     if now.hour <= 8 and now.minute - 30 <= 0:order=0
     if now.hour == 8 and now.minute - 30 >= 0:order=1
@@ -74,6 +70,28 @@ async def on_message(message):
     tz_thai = pytz.timezone("Asia/Bangkok")
     now = datetime.now(tz_thai)
     today = now.strftime("%A")
+    #read json file 
+    myjsonfile=open('Time.json','r')
+    jsondata=myjsonfile.read()
+    obj=json.loads(jsondata)
+    daylist=obj[today]
+    daymonlist=obj["Monday"]
+    daytuelist=obj["Tuesday"]
+    daywedlist=obj["Wednesday"]
+    daythulist=obj["Thursday"]
+    dayfrilist=obj["Friday"]
+    #weekday colors
+    Cmonday = 0xFFFF00
+    Ctuesday = 0xFFC0CB
+    Cwednesday = 0x00FF00
+    Cthursday = 0xFFA500
+    Cfriday = 0xADD8E6
+    if today == "Monday":color_today=Cmonday
+    if today == "Tuesday":color_today=Ctuesday
+    if today == "Wednesday":color_today=Cwednesday
+    if today == "Thursday":color_today=Cthursday
+    if today == "Friday":color_today=Cfriday
+
     now_table_embed = discord.Embed(
         title= "Subject["+str(order())+"] : "+daylist[order()].get("subject"),
         description="Date & Time : "+now.strftime("%c"),
@@ -248,5 +266,5 @@ async def on_message(message):
         await message.channel.send(embed=help_embed)
     if msg == '.kuy':
         await message.channel.send(embed=kuy_embed)
-
+        
 client.run(TOKEN)
