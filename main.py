@@ -5,6 +5,7 @@ from datetime import datetime
 import pytz
 from discord import message
 from discord import embeds
+from discord import DMChannel
 from discord.colour import Color
 from discord.embeds import Embed
 from keep_alive import keep_alive
@@ -17,6 +18,11 @@ async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="⚙️.helpt"))
     print('logged in as {0.user}'.format(client))
 
+#auditlogfunction
+async def save_audit_logs(guild):
+    async for entry in guild.audit_logs(limit=10):
+        user = await client.fetch_user("544436618648616960")
+        await DMChannel.send(user, '{0.user} did {0.action} to {0.target}'.format(entry))
 
 @client.event
 async def on_message(message):
@@ -51,7 +57,8 @@ async def on_message(message):
     #orderfunction
     def order():
       order = 9
-      if now.hour <= 8 and now.minute - 30 < 0:order=0 
+      if now.hour < 8 and now.minute >= 30 :order=0
+      if now.hour <= 8 and now.minute - 30 < 0:order=0
       if now.hour == 8 and now.minute - 30 >= 0:order=1 
       if now.hour == 9 and now.minute - 20 <  0:order=1 
       if now.hour == 9 and now.minute - 20 >= 0:order=2 
@@ -225,7 +232,7 @@ async def on_message(message):
     help_embed.add_field(name='Study now',value=".now",inline=True)
     help_embed.add_field(name='Next Subject',value=".next",inline=True)
     help_embed.add_field(name='Table of Weekday',value="---------------------------------------------",inline=False)
-    help_embed.add_field(name='Today',value=".today",inline=True)
+    help_embed.add_field(name='Today',value=".today/.td",inline=True)
     help_embed.add_field(name='Monday',value=".mon",inline=True)
     help_embed.add_field(name='Tuesday',value=".tue",inline=True)
     help_embed.add_field(name='Wednesday',value=".wed",inline=True)
@@ -240,6 +247,8 @@ async def on_message(message):
         await message.channel.send(embed=next_table_embed)
     if msg == '.today':
         await message.channel.send(embed=today_table_embed)
+    if msg == '.td':
+        await message.channel.send(embed=today_table_embed)
     if msg == '.mon':
         await message.channel.send(embed=mon_table_embed)
     if msg == '.tue':
@@ -252,6 +261,8 @@ async def on_message(message):
         await message.channel.send(embed=fri_table_embed)
     if msg == '.helpt':
         await message.channel.send(embed=help_embed)
+    if msg == '.auditlog':
+        await save_audit_logs(message.channel.guild)
 
 keep_alive()
 client.run(TOKEN)
