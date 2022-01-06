@@ -1,7 +1,7 @@
 #setup
 import discord
 import json
-from datetime import datetime
+import datetime
 import pytz
 from discord import message
 from discord import embeds
@@ -18,17 +18,11 @@ async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="⚙️.helpt"))
     print('logged in as {0.user}'.format(client))
 
-#auditlogfunction
-async def save_audit_logs(guild):
-    async for entry in guild.audit_logs(limit=10):
-        user = await client.fetch_user("544436618648616960")
-        await DMChannel.send(user, '{0.user} did {0.action} to {0.target}'.format(entry))
-
 @client.event
 async def on_message(message):
     #set time & order of timetable
     tz_thai = pytz.timezone("Asia/Bangkok")
-    now = datetime.now(tz_thai)
+    now = datetime.datetime.now(tz_thai)
     today = now.strftime("%A")
 
     #read json file 
@@ -56,26 +50,20 @@ async def on_message(message):
 
     #orderfunction
     def order():
-      order = 9
-      if now.hour < 8 and now.minute >= 30 :order=0
-      if now.hour <= 8 and now.minute - 30 < 0:order=0
-      if now.hour == 8 and now.minute - 30 >= 0:order=1 
-      if now.hour == 9 and now.minute - 20 <  0:order=1 
-      if now.hour == 9 and now.minute - 20 >= 0:order=2 
-      if now.hour == 10 and now.minute - 10 < 0:order=2 
-      if now.hour == 10 and now.minute - 10 >=0:order=3 
-      if now.hour == 11 and now.minute - 50 < 0:order=4 
-      if now.hour == 11 and now.minute - 50 >=0:order=5 
-      if now.hour == 12 and now.minute - 40 < 0:order=5 
-      if now.hour == 12 and now.minute - 40 >=0:order=6 
-      if now.hour == 13 and now.minute - 30 <= 0:order=6 
-      if now.hour == 13 and now.minute - 30 > 0:order=7 
-      if now.hour == 14 and now.minute - 20 < 0:order=7 
-      if now.hour == 14 and now.minute - 20 >=0:order=8 
-      if now.hour == 15 and now.minute - 10 < 0:order=8 
-      if now.hour == 15 and now.minute - 10 >=0:order=9
+      order = 0 
+      def time_in_range(start, end, current):
+        return start <= current <= end
+      for i in range(10):
+        stimeHR = daylist[i].get("startHR")
+        stimeMIN = daylist[i].get("startMIN")
+        etimeHR = daylist[i].get("endHR")
+        etimeMIN = daylist[i].get("endMIN")
+        start = datetime.time(stimeHR, stimeMIN, 0)
+        end = datetime.time(etimeHR, etimeMIN, 0)
+        current = datetime.time(int(now.strftime("%H")), int(now.strftime("%M")), 0)
+        if time_in_range(start, end, current) == True:order = i
       return order
-
+      
     #embed_discord
     #now
     now_table_embed = discord.Embed(
@@ -261,8 +249,6 @@ async def on_message(message):
         await message.channel.send(embed=fri_table_embed)
     if msg == '.helpt':
         await message.channel.send(embed=help_embed)
-    if msg == '.auditlog':
-        await save_audit_logs(message.channel.guild)
 
 keep_alive()
 client.run(TOKEN)
