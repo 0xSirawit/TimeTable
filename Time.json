@@ -3,266 +3,510 @@
     [
         {
             "subject": "Homeroom",
-            "time": "08:00-08:30",
-            "link": "https://meet.google.com/lookup/esbru5hoq4"
+            "time": "08:00-08:20",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 0,
+            "endHR": 8,
+            "endMIN": 20
         },
         {
             "subject": "Chemistry",
-            "time": "08:30-09:20",
-            "link": "https://meet.google.com/lookup/bgp4wudfrc"
+            "time": "08:30-09:10",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 20,
+            "endHR": 9,
+            "endMIN": 10
         },
         {
             "subject": "Chemistry",
-            "time": "09:20-10:10",
-            "link": "https://meet.google.com/lookup/bgp4wudfrc"
+            "time": "09:10-09:50",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 10,
+            "endHR": 9,
+            "endMIN": 50
         },
         {
             "subject": "Chemistry",
-            "time": "10:10-11:00",
-            "link": "https://meet.google.com/lookup/bgp4wudfrc"
+            "time": "10:05-10:45",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 50,
+            "endHR": 10,
+            "endMIN": 45
+        },
+        {
+            "subject": "Health education",
+            "time": "10:45-11:25",
+            "link": "",
+            "startHR": 10,
+            "startMIN": 45,
+            "endHR": 11,
+            "endMIN": 25
         },
         {
             "subject": "Lunch break",
-            "time": "11:00-11:50",
-            "link": "No_Meeting"
-        },
-        {
-            "subject": "Citizenship",
-            "time": "11:50-12:40",
-            "link": "https://meet.google.com/lookup/bh4qsl5izr"
-        },
-        {
-            "subject": "Thai_language",
-            "time": "12:40-13:30",
-            "link": "https://meet.google.com/lookup/gg6fprhcmh"
-        },
-        {
-            "subject": "Thai_language",
-            "time": "13:30-14:20",
-            "link": "https://meet.google.com/lookup/gg6fprhcmh"
+            "time": "11:25-12:05",
+            "link": "No_Meeting",
+            "startHR": 11,
+            "startMIN": 25,
+            "endHR": 12,
+            "endMIN": 5
         },
         {
             "subject": "Math2",
-            "time": "14:20-15:10",
-            "link": "https://meet.google.com/lookup/bqnhxrul45"
+            "time": "12:05-12:45",
+            "link": "",
+            "startHR": 12,
+            "startMIN": 5,
+            "endHR": 12,
+            "endMIN": 45
         },
         {
             "subject": "Math2",
-            "time": "15:10-16:00",
-            "link": "https://meet.google.com/lookup/bqnhxrul45"
+            "time": "12:45-13:25",
+            "link": "",
+            "startHR": 12,
+            "startMIN": 45,
+            "endHR": 13,
+            "endMIN": 25
+        },
+        {
+            "subject": "Social_Studies",
+            "time": "13:40-14:20",
+            "link": "",
+            "startHR": 13,
+            "startMIN": 25,
+            "endHR": 14,
+            "endMIN": 20
+        },
+        {
+            "subject": "Social_Studies",
+            "time": "14:20-15:00",
+            "link": "",
+            "startHR": 14,
+            "startMIN": 20,
+            "endHR": 15,
+            "endMIN": 0
+        },
+        {
+            "subject": "-",
+            "time": "15:00-15:40",
+            "link": "No_Meeting",
+            "startHR": 15,
+            "startMIN": 0,
+            "endHR": 15,
+            "endMIN": 40
         }
     ],
     "Tuesday":
     [
         {
             "subject": "Homeroom",
-            "time": "08:00-08:30",
-            "link": "https://meet.google.com/lookup/esbru5hoq4"
+            "time": "08:00-08:20",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 0,
+            "endHR": 8,
+            "endMIN": 20
         },
         {
-            "subject": "Computer_Science",
-            "time": "08:30-09:20",
-            "link": "https://meet.google.com/lookup/au6j3i36rz"
+            "subject": "Chemistry",
+            "time": "08:30-09:10",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 20,
+            "endHR": 9,
+            "endMIN": 10
         },
         {
-            "subject": "Health & Hygeine",
-            "time": "09:20-10:10",
-            "link": "https://meet.google.com/lookup/gonlvhhj4i"
+            "subject": "Physics",
+            "time": "09:10-09:50",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 10,
+            "endHR": 9,
+            "endMIN": 50
         },
         {
-            "subject": "Art",
-            "time": "10:10-11:00",
-            "link": "https://meet.google.com/lookup/fnugcqiw2x"
+            "subject": "Physics",
+            "time": "10:05-10:45",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 50,
+            "endHR": 10,
+            "endMIN": 45
         },
         {
             "subject": "Lunch break",
-            "time": "11:00-11:50",
-            "link": "No_Meeting"
+            "time": "10:45-11:25",
+            "link": "No_Meeting",
+            "startHR": 10,
+            "startMIN": 45,
+            "endHR": 11,
+            "endMIN": 25
         },
         {
             "subject": "Soldier",
-            "time": "11:50-12:40",
-            "link": "No_Meeting"
+            "time": "11:25-12:05",
+            "link": "No_Meeting",
+            "startHR": 11,
+            "startMIN": 25,
+            "endHR": 12,
+            "endMIN": 5
         },
         {
             "subject": "Soldier",
-            "time": "12:40-13:30",
-            "link": "No_Meeting"
+            "time": "12:05-12:45",
+            "link": "No_Meeting",
+            "startHR": 12,
+            "startMIN": 5,
+            "endHR": 12,
+            "endMIN": 45
         },
         {
             "subject": "Soldier",
-            "time": "13:30-14:20",
-            "link": "No_Meeting"
+            "time": "12:45-13:25",
+            "link": "No_Meeting",
+            "startHR": 12,
+            "startMIN": 45,
+            "endHR": 13,
+            "endMIN": 25
         },
         {
             "subject": "Soldier",
-            "time": "14:20-15:10",
-            "link": "No_Meeting"
+            "time": "13:40-14:20",
+            "link": "No_Meeting",
+            "startHR": 13,
+            "startMIN": 25,
+            "endHR": 14,
+            "endMIN": 20
         },
         {
             "subject": "Soldier",
-            "time": "15:10-16:00",
-            "link": "No_Meeting"
+            "time": "14:20-15:00",
+            "link": "No_Meeting",
+            "startHR": 14,
+            "startMIN": 20,
+            "endHR": 15,
+            "endMIN": 0
+        },
+        {
+            "subject": "Soldier",
+            "time": "15:00-15:40",
+            "link": "No_Meeting",
+            "startHR": 15,
+            "startMIN": 0,
+            "endHR": 15,
+            "endMIN": 40
         }
-
     ],
     "Wednesday":
     [
         {
             "subject": "Homeroom",
-            "time": "08:00-08:30",
-            "link": "https://meet.google.com/lookup/esbru5hoq4"
+            "time": "08:00-08:20",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 0,
+            "endHR": 8,
+            "endMIN": 20
         },
         {
-            "subject": "Social_Studies",
-            "time": "08:30-09:20",
-            "link": "https://meet.google.com/lookup/h5ygpz7ow2"
+            "subject": "Physics",
+            "time": "08:30-09:10",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 20,
+            "endHR": 9,
+            "endMIN": 10
         },
         {
-            "subject": "Social_Studies",
-            "time": "09:20-10:10",
-            "link": "https://meet.google.com/lookup/h5ygpz7ow2"
+            "subject": "Physics",
+            "time": "09:10-09:50",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 10,
+            "endHR": 9,
+            "endMIN": 50
         },
         {
-            "subject": "English_by_Stephan",
-            "time": "10:10-11:00",
-            "link": "https://meet.google.com/lookup/gnhhreanxy"
+            "subject": "Math2",
+            "time": "10:05-10:45",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 50,
+            "endHR": 10,
+            "endMIN": 45
         },
         {
-            "subject": "English_by_Stephan",
-            "time": "11:00-11:50",
-            "link": "https://meet.google.com/lookup/gnhhreanxy"
+            "subject": "Math2",
+            "time": "10:45-11:25",
+            "link": "",
+            "startHR": 10,
+            "startMIN": 45,
+            "endHR": 11,
+            "endMIN": 25
         },
         {
             "subject": "Lunch break",
-            "time": "11:50-12:40",
-            "link": "No_Meeting"
+            "time": "11:25-12:05",
+            "link": "No_Meeting",
+            "startHR": 11,
+            "startMIN": 25,
+            "endHR": 12,
+            "endMIN": 5
         },
         {
             "subject": "Home_Economics",
-            "time": "12:40-13:30",
-            "link": "https://meet.google.com/lookup/chzbc3mre4"
+            "time": "12:05-12:45",
+            "link": "",
+            "startHR": 12,
+            "startMIN": 5,
+            "endHR": 12,
+            "endMIN": 45
         },
         {
             "subject": "Physical_Education",
-            "time": "13:30-14:20",
-            "link": "Idk"
+            "time": "12:45-13:25",
+            "link": "Idk",
+            "startHR": 12,
+            "startMIN": 45,
+            "endHR": 13,
+            "endMIN": 25
         },
         {
-            "subject": "Physics",
-            "time": "14:20-15:10",
-            "link": "https://meet.google.com/lookup/fehmd7itfm"
+            "subject": "-",
+            "time": "13:40-14:20",
+            "link": "No_Meeting",
+            "startHR": 13,
+            "startMIN": 25,
+            "endHR": 14,
+            "endMIN": 20
         },
         {
-            "subject": "Physics",
-            "time": "15:10-16:00",
-            "link": "https://meet.google.com/lookup/fehmd7itfm"
+            "subject": "-",
+            "time": "14:20-15:00",
+            "link": "No_Meeting",
+            "startHR": 14,
+            "startMIN": 20,
+            "endHR": 15,
+            "endMIN": 0
+        },
+        {
+            "subject": "-",
+            "time": "15:00-15:40",
+            "link": "No_Meeting",
+            "startHR": 15,
+            "startMIN": 0,
+            "endHR": 15,
+            "endMIN": 40
         }
     ],
     "Thursday":
     [
         {
             "subject": "Homeroom",
-            "time": "08:00-08:30",
-            "link": "https://meet.google.com/lookup/esbru5hoq4"
+            "time": "08:00-08:20",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 0,
+            "endHR": 8,
+            "endMIN": 20
         },
         {
-            "subject": "Japanese & Chinese",
-            "time": "08:30-09:20",
-            "link": "Idk"
+            "subject": "Math",
+            "time": "08:30-09:10",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 20,
+            "endHR": 9,
+            "endMIN": 10
         },
         {
-            "subject": "Japanese & Chinese",
-            "time": "09:20-10:10",
-            "link": "Idk"
-        },
-        {
-            "subject": "Free_Time",
-            "time": "10:10-11:00",
-            "link": "No_Meeting"
+            "subject": "Math",
+            "time": "09:10-09:50",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 10,
+            "endHR": 9,
+            "endMIN": 50
         },
         {
             "subject": "Guidance",
-            "time": "11:00-11:50",
-            "link": "https://meet.google.com/lookup/a3fs5edl2x"
+            "time": "10:05-10:45",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 50,
+            "endHR": 10,
+            "endMIN": 45
         },
         {
             "subject": "Lunch break",
-            "time": "11:50-12:40",
-            "link": "No_Meeting"
-        },
-        {
-            "subject": "Math2",
-            "time": "12:40-13:30",
-            "link": "https://meet.google.com/lookup/bqnhxrul45"
-        },
-        {
-            "subject": "Math2",
-            "time": "13:30-14:20",
-            "link": "https://meet.google.com/lookup/bqnhxrul45"
+            "time": "10:45-11:25",
+            "link": "No_Meeting",
+            "startHR": 10,
+            "startMIN": 45,
+            "endHR": 11,
+            "endMIN": 25
         },
         {
             "subject": "English_by_Stephan",
-            "time": "14:20-15:10",
-            "link": "https://meet.google.com/lookup/gnhhreanxy"
+            "time": "12:05-12:45",
+            "link": "",
+            "startHR": 11,
+            "startMIN": 25,
+            "endHR": 12,
+            "endMIN": 5
         },
         {
             "subject": "English_by_Stephan",
-            "time": "15:10-16:00",
-            "link": "https://meet.google.com/lookup/gnhhreanxy"
+            "time": "12:45-13:25",
+            "link": "",
+            "startHR": 12,
+            "startMIN": 5,
+            "endHR": 12,
+            "endMIN": 45
+        },
+        {
+            "subject": "Citizenship",
+            "time": "13:40-14:20",
+            "link": "",
+            "startHR": 12,
+            "startMIN": 45,
+            "endHR": 13,
+            "endMIN": 25
+        },
+        {
+            "subject": "Music",
+            "time": "13:40-14:20",
+            "link": "",
+            "startHR": 13,
+            "startMIN": 25,
+            "endHR": 14,
+            "endMIN": 20
+        },
+        {
+            "subject": "Japanese & Chinese",
+            "time": "14:20-15:00",
+            "link": "Idk",
+            "startHR": 14,
+            "startMIN": 20,
+            "endHR": 15,
+            "endMIN": 0
+        },
+        {
+            "subject": "Japanese & Chinese",
+            "time": "15:00-15:40",
+            "link": "Idk",
+            "startHR": 15,
+            "startMIN": 0,
+            "endHR": 15,
+            "endMIN": 40
         }
     ],
     "Friday":
     [
         {
             "subject": "Homeroom",
-            "time": "08:00-08:30",
-            "link": "https://meet.google.com/lookup/esbru5hoq4"
+            "time": "08:00-08:20",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 0,
+            "endHR": 8,
+            "endMIN": 20
         },
         {
-            "subject": "Biology",
-            "time": "08:30-09:20",
-            "link": "Idk"
+            "subject": "Thai_language",
+            "time": "08:30-09:10",
+            "link": "",
+            "startHR": 8,
+            "startMIN": 30,
+            "endHR": 9,
+            "endMIN": 10
         },
         {
-            "subject": "Biology",
-            "time": "09:20-10:10",
-            "link": "Idk"
+            "subject": "Thai_language",
+            "time": "09:10-09:50",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 10,
+            "endHR": 9,
+            "endMIN": 50
         },
         {
-            "subject": "Physics",
-            "time": "10:10-11:00",
-            "link": "https://meet.google.com/lookup/fehmd7itfm"
+            "subject": "Computer Science",
+            "time": "10:05-10:45",
+            "link": "",
+            "startHR": 9,
+            "startMIN": 50,
+            "endHR": 10,
+            "endMIN": 45            
         },
         {
-            "subject": "Physics",
-            "time": "11:00-11:50",
-            "link": "https://meet.google.com/lookup/fehmd7itfm"
+            "subject": "Computer Science",
+            "time": "10:45-11:25",
+            "link": "",
+            "startHR": 10,
+            "startMIN": 45,
+            "endHR": 11,
+            "endMIN": 25
         },
         {
             "subject": "Lunch break",
-            "time": "11:50-12:40",
-            "link": "No_Meeting"
-        },
-        {
-            "subject": "Math1",
-            "time": "12:40-13:30",
-            "link": "https://meet.google.com/lookup/df6f3oodox"
-        },
-        {
-            "subject": "Math1",
-            "time": "13:30-14:20",
-            "link": "https://meet.google.com/lookup/df6f3oodox"
+            "time": "11:25-12:05",
+            "link": "No_Meeting",
+            "startHR": 11,
+            "startMIN": 25,
+            "endHR": 12,
+            "endMIN": 5
         },
         {
             "subject": "English_by_Patra",
-            "time": "14:20-15:10",
-            "link": "https://meet.google.com/lookup/h2k5sisf4i"
+            "time": "12:05-12:45",
+            "link": "",
+            "startHR": 12,
+            "startMIN": 5,
+            "endHR": 12,
+            "endMIN": 45
         },
         {
             "subject": "English_by_Patra",
-            "time": "15:10-16:00",
-            "link": "https://meet.google.com/lookup/h2k5sisf4i"
+            "time": "12:45-13:25",
+            "link": "",
+            "startHR": 12,
+            "startMIN": 45,
+            "endHR": 13,
+            "endMIN": 25
+        },
+        {
+            "subject": "Break",
+            "time": "13:40-14:20",
+            "link": "No_Meeting",
+            "startHR": 13,
+            "startMIN": 25,
+            "endHR": 14,
+            "endMIN": 20
+        },
+        {
+            "subject": "English_by_Stephan",
+            "time": "14:20-15:00",
+            "link": "",
+            "startHR": 14,
+            "startMIN": 20,
+            "endHR": 15,
+            "endMIN": 0
+        },
+        {
+            "subject": "English_by_Stephan",
+            "time": "15:00-15:40",
+            "link": "",
+            "startHR": 15,
+            "startMIN": 0,
+            "endHR": 15,
+            "endMIN": 40
         }
     ]
 }
