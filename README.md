@@ -1,6 +1,6 @@
 # TimeTable
 **TimeTable Discord Bot** <br>
-⚙️ .h | help <br>
+⚙️ .helpt | help <br>
 **Module requiement**
 * discord
 * json
