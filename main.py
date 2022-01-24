@@ -28,7 +28,7 @@ async def on_ready():
   
 @tasks.loop(seconds=1)
 async def updates():
-  global daytimetable,color_today,Cmonday,Ctuesday,Cwednesday,Cthursday,Cfriday,today,now_table_embed,next_table_embed,help_embed,now,weekdays
+  global daytimetable,color_today,Cmonday,Ctuesday,Cwednesday,Cthursday,Cfriday,today,now_table_embed,next_table_embed,help_embed,now,weekday
   #Set time & update time
   tz_thai = pytz.timezone("Asia/Bangkok")
   now = datetime.datetime.now(tz_thai)
