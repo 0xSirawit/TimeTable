@@ -26,14 +26,14 @@ async def on_ready():
   await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="⚙️.helpt"))
   print('logged in as {0.user}'.format(client))  
   
-@tasks.loop(seconds=5)
+@tasks.loop(seconds=1)
 async def updates():
   global daytimetable,color_today,Cmonday,Ctuesday,Cwednesday,Cthursday,Cfriday,today,now_table_embed,next_table_embed,help_embed,now,weekdays
   #Set time & update time
   tz_thai = pytz.timezone("Asia/Bangkok")
   now = datetime.datetime.now(tz_thai)
   today = now.strftime("%A")
-  weekdays = ["Monday","Tuesday","Wednesday","Thursday","Friday"]
+  weekday = ["Monday","Tuesday","Wednesday","Thursday","Friday"]
 
   #Read json file 
   myjsonfile=open('Time.json','r')
@@ -143,7 +143,7 @@ async def notification():
     return current1 == datetime.time(checktimeMIN, checktimeHR, 0)
 
   if str(status_of_notice) == "enable":
-    if today in weekdays:
+    if today in weekday:
       if (checktime(8,0) or checktime(8,30) or 
           checktime(9,10) or checktime(10,45) or 
           checktime(11,25) or checktime(12,5) or 
