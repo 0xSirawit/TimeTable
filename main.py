@@ -9,6 +9,7 @@ from discord.colour import Color
 from discord.embeds import Embed
 from discord.ext import commands, tasks
 from keep_alive import keep_alive
+from table2ascii import table2ascii,PresetStyle
 
 #set variable & etc.
 global nchannel,nchannel_id,status_of_notice
@@ -58,7 +59,7 @@ async def updates():
     order = 0 
     def time_in_range(start, end, current):
       return start <= current <= end
-    for i in range(10):
+    for i in range(11):
       stimeHR = daylist[i].get("startHR")
       stimeMIN = daylist[i].get("startMIN")
       etimeHR = daylist[i].get("endHR")
@@ -97,20 +98,24 @@ async def updates():
       description="Date & Time : "+now.strftime("%c"),
       color= colorday
     )
-    day_table_embed.add_field(name='Subject',value=(obj[day][0].get("subject")),inline=True)
-    day_table_embed.add_field(name='Time',value=(obj[day][0].get("time")),inline=True)
-    day_table_embed.add_field(name='Link',value=(obj[day][0].get("link")),inline=True)
-    for i in range(10):
-      j = i+1
-      sum =[]
-      subject = (obj[day][j].get("subject"))
-      time = (obj[day][j].get("time"))
-      link = (obj[day][j].get("link"))
-      sum.append(subject)
-      sum.append(time)
-      sum.append(link)
-      mix = " | ".join(sum)
-      day_table_embed.add_field(name='--------------------------------------------------',value=mix,inline=False)
+    table101=[]
+    sumlinks=[]
+    for i in range(11):
+      subject = (obj[day][i].get("subject"))
+      time = (obj[day][i].get("time"))
+      link = (obj[day][i].get("link"))
+      hyperlink = f"[M{i}]({link})" 
+      sumlinks.append(hyperlink)
+      y = [[i,subject, time]]
+      table101 += y
+    output = table2ascii(
+        header=["Order", "Subject", "Time"],
+        body=table101,
+        first_col_heading=True,
+        style=PresetStyle.thin_compact_rounded
+      ) 
+    day_table_embed.add_field(name='\u200b',value=f"```\n{output}\n```",inline=True)
+    day_table_embed.add_field(name='Links',value=f"{' | '.join([str(i) for i in sumlinks])}", inline=False)
     return day_table_embed
     
   #Help
@@ -144,13 +149,16 @@ async def notification():
 
   if str(status_of_notice) == "enable":
     if today in weekday:
-      if (checktime(8,0) or checktime(8,30) or 
+      if (checktime(8,0) or checktime(8,20) or 
           checktime(9,10) or checktime(10,45) or 
           checktime(11,25) or checktime(12,5) or 
           checktime(12,5) or checktime(12,45) or
           checktime(13,40) or checktime(14,20) or
           checktime(15,0)
-      ):channel1 = client.get_channel(nchannel_id);await channel1.send(embed=now_table_embed)
+      ):
+        now_table_embed.set_footer(text="notification")
+        channel1 = client.get_channel(nchannel_id)
+        await channel1.send(embed=now_table_embed)
 
 #commands
 @client.command()
