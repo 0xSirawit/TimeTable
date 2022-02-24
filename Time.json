@@ -508,5 +508,209 @@
             "endHR": 15,
             "endMIN": 40
         }
+    ],
+    "Saturday":
+    [
+        {
+            "subject": "Weekend",
+            "time": "08:00-08:20",
+            "link": "No_Meeting",
+            "startHR": 8,
+            "startMIN": 0,
+            "endHR": 8,
+            "endMIN": 20
+        },
+        {
+            "subject": "Weekend",
+            "time": "08:30-09:10",
+            "link": "No_Meeting",
+            "startHR": 8,
+            "startMIN": 30,
+            "endHR": 9,
+            "endMIN": 10
+        },
+        {
+            "subject": "Weekend",
+            "time": "09:10-09:50",
+            "link": "No_Meeting",
+            "startHR": 9,
+            "startMIN": 10,
+            "endHR": 9,
+            "endMIN": 50
+        },
+        {
+            "subject": "Weekend",
+            "time": "10:05-10:45",
+            "link": "No_Meeting",
+            "startHR": 9,
+            "startMIN": 50,
+            "endHR": 10,
+            "endMIN": 45            
+        },
+        {
+            "subject": "Weekend",
+            "time": "10:45-11:25",
+            "link": "No_Meeting",
+            "startHR": 10,
+            "startMIN": 45,
+            "endHR": 11,
+            "endMIN": 25
+        },
+        {
+            "subject": "Weekend",
+            "time": "11:25-12:05",
+            "link": "No_Meeting",
+            "startHR": 11,
+            "startMIN": 25,
+            "endHR": 12,
+            "endMIN": 5
+        },
+        {
+            "subject": "Weekend",
+            "time": "12:05-12:45",
+            "link": "No_Meeting",
+            "startHR": 12,
+            "startMIN": 5,
+            "endHR": 12,
+            "endMIN": 45
+        },
+        {
+            "subject": "Weekend",
+            "time": "12:45-13:25",
+            "link": "No_Meeting",
+            "startHR": 12,
+            "startMIN": 45,
+            "endHR": 13,
+            "endMIN": 25
+        },
+        {
+            "subject": "Weekend",
+            "time": "13:40-14:20",
+            "link": "No_Meeting",
+            "startHR": 13,
+            "startMIN": 25,
+            "endHR": 14,
+            "endMIN": 20
+        },
+        {
+            "subject": "Weekend",
+            "time": "14:20-15:00",
+            "link": "No_Meeting",
+            "startHR": 14,
+            "startMIN": 20,
+            "endHR": 15,
+            "endMIN": 0
+        },
+        {
+            "subject": "Weekend",
+            "time": "15:00-15:40",
+            "link": "No_Meeting",
+            "startHR": 15,
+            "startMIN": 0,
+            "endHR": 15,
+            "endMIN": 40
+        }
+    ],
+    "Sunday":
+    [
+        {
+            "subject": "Weekend",
+            "time": "08:00-08:20",
+            "link": "No_Meeting",
+            "startHR": 8,
+            "startMIN": 0,
+            "endHR": 8,
+            "endMIN": 20
+        },
+        {
+            "subject": "Weekend",
+            "time": "08:30-09:10",
+            "link": "No_Meeting",
+            "startHR": 8,
+            "startMIN": 30,
+            "endHR": 9,
+            "endMIN": 10
+        },
+        {
+            "subject": "Weekend",
+            "time": "09:10-09:50",
+            "link": "No_Meeting",
+            "startHR": 9,
+            "startMIN": 10,
+            "endHR": 9,
+            "endMIN": 50
+        },
+        {
+            "subject": "Weekend",
+            "time": "10:05-10:45",
+            "link": "No_Meeting",
+            "startHR": 9,
+            "startMIN": 50,
+            "endHR": 10,
+            "endMIN": 45            
+        },
+        {
+            "subject": "Weekend",
+            "time": "10:45-11:25",
+            "link": "No_Meeting",
+            "startHR": 10,
+            "startMIN": 45,
+            "endHR": 11,
+            "endMIN": 25
+        },
+        {
+            "subject": "Weekend",
+            "time": "11:25-12:05",
+            "link": "No_Meeting",
+            "startHR": 11,
+            "startMIN": 25,
+            "endHR": 12,
+            "endMIN": 5
+        },
+        {
+            "subject": "Weekend",
+            "time": "12:05-12:45",
+            "link": "No_Meeting",
+            "startHR": 12,
+            "startMIN": 5,
+            "endHR": 12,
+            "endMIN": 45
+        },
+        {
+            "subject": "Weekend",
+            "time": "12:45-13:25",
+            "link": "No_Meeting",
+            "startHR": 12,
+            "startMIN": 45,
+            "endHR": 13,
+            "endMIN": 25
+        },
+        {
+            "subject": "Weekend",
+            "time": "13:40-14:20",
+            "link": "No_Meeting",
+            "startHR": 13,
+            "startMIN": 25,
+            "endHR": 14,
+            "endMIN": 20
+        },
+        {
+            "subject": "Weekend",
+            "time": "14:20-15:00",
+            "link": "No_Meeting",
+            "startHR": 14,
+            "startMIN": 20,
+            "endHR": 15,
+            "endMIN": 0
+        },
+        {
+            "subject": "Weekend",
+            "time": "15:00-15:40",
+            "link": "No_Meeting",
+            "startHR": 15,
+            "startMIN": 0,
+            "endHR": 15,
+            "endMIN": 40
+        }
     ]
 }
