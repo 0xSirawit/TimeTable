@@ -6,3 +6,4 @@
 * json
 * datetime
 * pytz
+* table2ascii
