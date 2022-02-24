@@ -49,10 +49,11 @@ async def updates():
   Cthursday = 0xFFA500
   Cfriday = 0xADD8E6
   if today == "Monday":color_today=Cmonday
-  if today == "Tuesday":color_today=Ctuesday
-  if today == "Wednesday":color_today=Cwednesday
-  if today == "Thursday":color_today=Cthursday
-  if today == "Friday":color_today=Cfriday
+  elif today == "Tuesday":color_today=Ctuesday
+  elif today == "Wednesday":color_today=Cwednesday
+  elif today == "Thursday":color_today=Cthursday
+  elif today == "Friday":color_today=Cfriday
+  else: color_today = 0x808080
 
   #Order function
   def order():
@@ -82,7 +83,7 @@ async def updates():
 
   #Next subject
   nextsubject = order()+1
-  if order() == 9:nextsubject = order()
+  if order() == 10:nextsubject = order()
   next_table_embed = discord.Embed(
     title= "Subject["+str(nextsubject)+"] : "+daylist[nextsubject].get("subject"),
     description="Date & Time : "+now.strftime("%c"),
@@ -150,8 +151,8 @@ async def notification():
   if str(status_of_notice) == "enable":
     if today in weekday:
       if (checktime(8,0) or checktime(8,20) or 
-          checktime(9,10) or checktime(10,45) or 
-          checktime(11,25) or checktime(12,5) or 
+          checktime(9,10) or checktime(10,5) or 
+          checktime(10,45) or checktime(11,25) or 
           checktime(12,5) or checktime(12,45) or
           checktime(13,40) or checktime(14,20) or
           checktime(15,0)
